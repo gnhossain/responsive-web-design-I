@@ -81,10 +81,7 @@ nav{
 		/* display: flex; */
 		
 	}
-	nav a:hover{
-		color:purple;
-		background-color:cornflowerblue;
-	}
+	
 	.title{
 		margin-bottom: 50px;
 		display: flex;
@@ -157,4 +154,77 @@ nav{
 	color: rgb(64, 64, 64);
 	}
 
+    /* Responsive */
 
+      .logo-top{
+          text-align: center;
+      }
+
+      .middle-img{
+          width: 100%;
+      }
+
+      .container{
+          width: 96%;
+          margin: auto;
+      }
+      
+      @media(max-width: 800px) {
+        /* .container {
+          background:grey;
+        } */
+      
+        .container header nav {
+          display: flex;
+          flex-direction:row;
+        }
+      
+        .container header nav a {
+          margin-bottom: 20px;
+        }
+        
+        .title img{
+            display:none;
+        }
+        
+        .title{
+            justify-content: center;
+        }
+
+        .logo{
+            display:none;
+        }
+
+      }
+
+      
+      @media(max-width: 500px) {
+        /* .container {
+          background:lightseagreen;
+        } */
+      
+        .container header nav {
+          display: flex;
+          flex-direction: column;
+        }
+      
+        .container header nav a {
+          /* margin-bottom: 20px; */
+          border: 1px solid grey;
+          margin: 0;
+          padding: 20px;
+
+        }
+
+        .logo{
+            display: none;
+        }
+
+        .top, .bottom{
+            flex-direction: column;
+        }
+
+        .text{
+            width: 95% !important;
+        }
+      }
